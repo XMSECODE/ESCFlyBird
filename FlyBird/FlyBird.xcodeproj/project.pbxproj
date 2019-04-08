@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0A1F73922548254005CF0D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A1F73822548254005CF0D5 /* AppDelegate.m */; };
+		F0A1F74022548255005CF0D5 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A1F73F22548255005CF0D5 /* GameScene.m */; };
+		F0A1F74322548255005CF0D5 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A1F74222548255005CF0D5 /* GameViewController.m */; };
+		F0A1F74622548255005CF0D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0A1F74422548255005CF0D5 /* Main.storyboard */; };
+		F0A1F74822548279005CF0D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A1F74722548279005CF0D5 /* Assets.xcassets */; };
+		F0A1F74B22548279005CF0D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0A1F74922548279005CF0D5 /* LaunchScreen.storyboard */; };
+		F0A1F74E22548279005CF0D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A1F74D22548279005CF0D5 /* main.m */; };
+		F0EC548B22559A280070DAAF /* player3.png in Resources */ = {isa = PBXBuildFile; fileRef = F0EC548822559A280070DAAF /* player3.png */; };
+		F0EC548C22559A280070DAAF /* player1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0EC548922559A280070DAAF /* player1.png */; };
+		F0EC548D22559A280070DAAF /* player2.png in Resources */ = {isa = PBXBuildFile; fileRef = F0EC548A22559A280070DAAF /* player2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F0A1F73422548253005CF0D5 /* FlyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A1F73722548253005CF0D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F0A1F73822548254005CF0D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F0A1F73E22548255005CF0D5 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		F0A1F73F22548255005CF0D5 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		F0A1F74122548255005CF0D5 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		F0A1F74222548255005CF0D5 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		F0A1F74522548255005CF0D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0A1F74722548279005CF0D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0A1F74A22548279005CF0D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0A1F74C22548279005CF0D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0A1F74D22548279005CF0D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0EC548822559A280070DAAF /* player3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player3.png; sourceTree = "<group>"; };
+		F0EC548922559A280070DAAF /* player1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player1.png; sourceTree = "<group>"; };
+		F0EC548A22559A280070DAAF /* player2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player2.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0A1F73122548253005CF0D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0A1F72B22548253005CF0D5 = {
+			isa = PBXGroup;
+			children = (
+				F0A1F73622548253005CF0D5 /* FlyBird */,
+				F0A1F73522548253005CF0D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0A1F73522548253005CF0D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0A1F73422548253005CF0D5 /* FlyBird.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0A1F73622548253005CF0D5 /* FlyBird */ = {
+			isa = PBXGroup;
+			children = (
+				F0EC5487225599DF0070DAAF /* player.atals */,
+				F0A1F73722548253005CF0D5 /* AppDelegate.h */,
+				F0A1F73822548254005CF0D5 /* AppDelegate.m */,
+				F0A1F73E22548255005CF0D5 /* GameScene.h */,
+				F0A1F73F22548255005CF0D5 /* GameScene.m */,
+				F0A1F74122548255005CF0D5 /* GameViewController.h */,
+				F0A1F74222548255005CF0D5 /* GameViewController.m */,
+				F0A1F74422548255005CF0D5 /* Main.storyboard */,
+				F0A1F74722548279005CF0D5 /* Assets.xcassets */,
+				F0A1F74922548279005CF0D5 /* LaunchScreen.storyboard */,
+				F0A1F74C22548279005CF0D5 /* Info.plist */,
+				F0A1F74D22548279005CF0D5 /* main.m */,
+			);
+			path = FlyBird;
+			sourceTree = "<group>";
+		};
+		F0EC5487225599DF0070DAAF /* player.atals */ = {
+			isa = PBXGroup;
+			children = (
+				F0EC548922559A280070DAAF /* player1.png */,
+				F0EC548A22559A280070DAAF /* player2.png */,
+				F0EC548822559A280070DAAF /* player3.png */,
+			);
+			path = player.atals;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0A1F73322548253005CF0D5 /* FlyBird */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0A1F75122548279005CF0D5 /* Build configuration list for PBXNativeTarget "FlyBird" */;
+			buildPhases = (
+				F0A1F73022548253005CF0D5 /* Sources */,
+				F0A1F73122548253005CF0D5 /* Frameworks */,
+				F0A1F73222548253005CF0D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlyBird;
+			productName = testgame;
+			productReference = F0A1F73422548253005CF0D5 /* FlyBird.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0A1F72C22548253005CF0D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = xiang;
+				TargetAttributes = {
+					F0A1F73322548253005CF0D5 = {
+						CreatedOnToolsVersion = 10.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F0A1F72F22548253005CF0D5 /* Build configuration list for PBXProject "FlyBird" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0A1F72B22548253005CF0D5;
+			productRefGroup = F0A1F73522548253005CF0D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0A1F73322548253005CF0D5 /* FlyBird */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0A1F73222548253005CF0D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A1F74622548255005CF0D5 /* Main.storyboard in Resources */,
+				F0A1F74822548279005CF0D5 /* Assets.xcassets in Resources */,
+				F0EC548B22559A280070DAAF /* player3.png in Resources */,
+				F0EC548D22559A280070DAAF /* player2.png in Resources */,
+				F0EC548C22559A280070DAAF /* player1.png in Resources */,
+				F0A1F74B22548279005CF0D5 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0A1F73022548253005CF0D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A1F74022548255005CF0D5 /* GameScene.m in Sources */,
+				F0A1F74322548255005CF0D5 /* GameViewController.m in Sources */,
+				F0A1F74E22548279005CF0D5 /* main.m in Sources */,
+				F0A1F73922548254005CF0D5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F0A1F74422548255005CF0D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0A1F74522548255005CF0D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0A1F74922548279005CF0D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0A1F74A22548279005CF0D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0A1F74F22548279005CF0D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F0A1F75022548279005CF0D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0A1F75222548279005CF0D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZ6KCMA9HH;
+				INFOPLIST_FILE = "$(SRCROOT)/FlyBird/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiang.flybird;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0A1F75322548279005CF0D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZ6KCMA9HH;
+				INFOPLIST_FILE = "$(SRCROOT)/FlyBird/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiang.flybird;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0A1F72F22548253005CF0D5 /* Build configuration list for PBXProject "FlyBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A1F74F22548279005CF0D5 /* Debug */,
+				F0A1F75022548279005CF0D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0A1F75122548279005CF0D5 /* Build configuration list for PBXNativeTarget "FlyBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A1F75222548279005CF0D5 /* Debug */,
+				F0A1F75322548279005CF0D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0A1F72C22548253005CF0D5 /* Project object */;
+}
