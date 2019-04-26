@@ -28,6 +28,8 @@
 
 @property(nonatomic,assign)int meters;
 
+@property(nonatomic,strong)SKLightNode* light;
+
 @end
 
 @implementation GameScene
@@ -51,12 +53,13 @@
     self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
     //物理世界的碰撞检测代理为场景自己，这样如果这个物理世界里面有两个可以碰撞接触的物理体碰到一起了就会通知他的代理
     self.physicsWorld.contactDelegate = self;
-
+    
     NSMutableArray *floorArray = [NSMutableArray array];
     for (int i = 0; i < 3; i++) {
         SKSpriteNode *floor = [[SKSpriteNode alloc] initWithImageNamed:@"floor"];
         [floorArray addObject:floor];
         floor.anchorPoint = CGPointMake(0, 0);
+        floor.lightingBitMask = self.birdCategory;
         floor.position = CGPointMake(floor.size.width * i, 0);
         floor.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:CGRectMake(0, 0, floor.size.width, floor.size.height)];
         floor.physicsBody.categoryBitMask = self.floorCategory;
@@ -70,9 +73,10 @@
     self.bird.physicsBody.allowsRotation = NO;
     //设置小鸟物理体标示
     self.bird.physicsBody.categoryBitMask = self.birdCategory;
+    self.bird.shadowedBitMask = self.birdCategory;
     //设置可以小鸟碰撞检测的物理体
     self.bird.physicsBody.contactTestBitMask = self.floorCategory | self.pipeCategory;
-
+    self.bird.zPosition = 1;
     [self addChild:self.bird];
 
     [self shuffle];
@@ -87,6 +91,38 @@
     self.metersLabel.position = CGPointMake(self.size.width * 0.5, self.size.height - 30);
     self.metersLabel.zPosition = 100;
     [self addChild:self.metersLabel];
+    
+    //setup a fire emitter
+    NSString *fireEmmitterPath = [[NSBundle mainBundle] pathForResource:@"fire" ofType:@"sks"];
+    SKEmitterNode *fireEmmitter = [NSKeyedUnarchiver unarchiveObjectWithFile:fireEmmitterPath];
+    fireEmmitter.position = CGPointMake(self.frame.size.width/2, self.frame.size.height - 20);
+    fireEmmitter.name = @"fireEmmitter";
+    fireEmmitter.zPosition = 1;
+    fireEmmitter.targetNode = self;
+    [self addChild: fireEmmitter];
+//
+//
+
+    //Setup a LightNode
+    SKLightNode* light = [[SKLightNode alloc] init];
+    light.categoryBitMask = 1;
+    light.falloff = 1;
+    light.ambientColor = [UIColor whiteColor];
+    light.lightColor = [[UIColor alloc] initWithRed:1.0 green:1.0 blue:0.0 alpha:0.5];
+    light.shadowColor = [[UIColor alloc] initWithRed:0.0 green:0.0 blue:0.0 alpha:0.3];
+    [fireEmmitter addChild:light];
+    self.light = light;
+//
+//    self.light = [[SKLightNode alloc] init];
+//    self.light.position = CGPointMake(50, self.size.height - 40);
+//    self.light.lightColor = [UIColor redColor];
+//    self.light.shadowColor = [SKColor blackColor];
+//    self.light.ambientColor = [UIColor blueColor];
+//    self.light.enabled = YES;
+//    self.light.falloff = 1.0;
+//    self.light.zPosition = 200;
+//    self.light.categoryBitMask = self.birdCategory | self.floorCategory;
+//    [self addChild:self.light];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -102,6 +138,11 @@
             break;
         default:
             break;
+    }
+    //On Dragging make the emitter with the attached light follow the position
+    for (UITouch *touch in touches) {
+        CGPoint location = [touch locationInNode:self];
+        [self childNodeWithName:@"fireEmmitter"].position = CGPointMake(location.x, location.y);
     }
 }
 

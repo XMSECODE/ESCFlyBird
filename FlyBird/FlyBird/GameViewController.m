@@ -20,7 +20,7 @@
     scene.scaleMode = SKSceneScaleModeAspectFill;
     [skView presentScene:scene];
     skView.ignoresSiblingOrder = true;
-    
+
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
 }

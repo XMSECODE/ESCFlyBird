@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046A1EAF226C8ABC005B774C /* fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 046A1EAE226C8ABC005B774C /* fire.sks */; };
+		046A1EB1226C8D86005B774C /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 046A1EB0226C8D86005B774C /* spark.png */; };
 		F0A1F73922548254005CF0D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A1F73822548254005CF0D5 /* AppDelegate.m */; };
 		F0A1F74022548255005CF0D5 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A1F73F22548255005CF0D5 /* GameScene.m */; };
 		F0A1F74322548255005CF0D5 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A1F74222548255005CF0D5 /* GameViewController.m */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046A1EAE226C8ABC005B774C /* fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fire.sks; sourceTree = "<group>"; };
+		046A1EB0226C8D86005B774C /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		F0A1F73422548253005CF0D5 /* FlyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A1F73722548253005CF0D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0A1F73822548254005CF0D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				F0A1F74122548255005CF0D5 /* GameViewController.h */,
 				F0A1F74222548255005CF0D5 /* GameViewController.m */,
 				F0A1F74422548255005CF0D5 /* Main.storyboard */,
+				046A1EB0226C8D86005B774C /* spark.png */,
+				046A1EAE226C8ABC005B774C /* fire.sks */,
 				F0A1F74722548279005CF0D5 /* Assets.xcassets */,
 				F0A1F74922548279005CF0D5 /* LaunchScreen.storyboard */,
 				F0A1F74C22548279005CF0D5 /* Info.plist */,
@@ -154,7 +160,9 @@
 				F0A1F74622548255005CF0D5 /* Main.storyboard in Resources */,
 				F0A1F74822548279005CF0D5 /* Assets.xcassets in Resources */,
 				F0EC548B22559A280070DAAF /* player3.png in Resources */,
+				046A1EAF226C8ABC005B774C /* fire.sks in Resources */,
 				F0EC548D22559A280070DAAF /* player2.png in Resources */,
+				046A1EB1226C8D86005B774C /* spark.png in Resources */,
 				F0EC548C22559A280070DAAF /* player1.png in Resources */,
 				F0A1F74B22548279005CF0D5 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -313,7 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NZ6KCMA9HH;
+				DEVELOPMENT_TEAM = 4SF28MHQDQ;
 				INFOPLIST_FILE = "$(SRCROOT)/FlyBird/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -328,7 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NZ6KCMA9HH;
+				DEVELOPMENT_TEAM = 4SF28MHQDQ;
 				INFOPLIST_FILE = "$(SRCROOT)/FlyBird/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
